@@ -1,0 +1,45 @@
+<html>
+<head>
+<title>Create Vault Org</title>
+</head>
+<body style="font-family: tahoma">
+<h1>Create Vault Org</h1>
+<form method="post" enctype="multipart/form-data" action="/funone/ecoreorgcreate/">
+{% csrf_token %}
+<div style="width: 350px; display: table;font-size: 12">
+	<div style="display: table-row;text-align: left">
+		<div style="width: 150px;display: table-cell;padding-right: 5px;padding-bottom: 5px;text-align: left">Org Name</div>
+		<div style="width: 200px;display: table-cell;text-align: left;"><input type="text" id="txtorgname" name="txtorgname" style="width: 180px;" /></div>
+	</div>
+	<div style="display: table-row;text-align: left">
+		<div style="width: 150px;display: table-cell;padding-right: 5px;padding-bottom: 5px;text-align: left">Legal Name</div>
+		<div style="width: 200px;display: table-cell;text-align: left;"><input type="text" id="txtlegalname" name="txtlegalname" style="width: 180px;" /></div>
+	</div>
+	<div style="display: table-row;text-align: left">
+		<div style="width: 150px;display: table-cell;padding-right: 5px;padding-bottom: 5px;text-align: left">Street</div>
+		<div style="width: 200px;display: table-cell;text-align: left;"><input type="text" id="txtstreet" name="txtstreet" style="width: 180px;" /></div>
+	</div>
+	<div style="display: table-row;text-align: left">
+		<div style="width: 150px;display: table-cell;padding-right: 5px;padding-bottom: 5px;text-align: left">City</div>
+		<div style="width: 200px;display: table-cell;text-align: left;"><input type="text" id="txtcity" name="txtcity" style="width: 180px;" /></div>
+	</div>
+	<div style="display: table-row;text-align: left">
+		<div style="width: 150px;display: table-cell;padding-right: 5px;padding-bottom: 5px;text-align: left">State</div>
+		<div style="width: 200px;display: table-cell;text-align: left;"><input type="text" id="txtstate" name="txtstate" style="width: 180px;" /></div>
+	</div>
+	<div style="display: table-row;text-align: left">
+		<div style="width: 150px;display: table-cell;padding-right: 5px;padding-bottom: 5px;text-align: left">Zip</div>
+		<div style="width: 200px;display: table-cell;text-align: left;"><input type="text" id="txtszip" name="txtzip" style="width: 180px;" /></div>
+	</div>
+	<div style="display: table-row;text-align: left">
+		<div style="width: 150px;display: table-cell;padding-right: 5px;padding-bottom: 5px;text-align: left">Retention Buffer</div>
+		<div style="width: 200px;display: table-cell;text-align: left;"><input type="text" id="txtretbuf" name="txtretbuf" style="width: 180px;" value="84" /></div>
+	</div>
+	<div style="display: table-row;text-align: left">
+		<div style="width: 150px;display: table-cell;padding-right: 5px;padding-bottom: 5px;text-align: left">
+		<input type="submit" id="btnsubmit" name="btnsubmit" value="Submit" /></div>
+	</div>
+</div>
+</form>
+</body>
+</html>
